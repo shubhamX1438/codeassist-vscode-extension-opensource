@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+	  "module": "commonjs",
+	  "target": "es6",
+	  "outDir": "./out",
+	  "lib": ["es6"],
+	  "sourceMap": true,
+	  "typeRoots": ["node_modules/@types"], // Ensure type definitions are resolved
+	  "types": ["vscode", "mocha", "node"]  // Include these types explicitly
+	},
+	"include": ["src/**/*.ts", "test/**/*.ts"], // Include test files as well
+	"exclude": ["node_modules", ".vscode-test"]
+  }
+  

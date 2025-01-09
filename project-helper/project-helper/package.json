@@ -1,0 +1,121 @@
+{
+  "name": "project-helper",
+  "displayName": "Project Helper",
+  "description": "Gather comments, logs, notes, dependencies, and more. Includes a Dashboard for one-click commands.",
+  "version": "1.2.0",
+  "publisher": "Shubham Indulkar", 
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:projectHelper.gatherComments",
+    "onCommand:projectHelper.openNotes",
+    "onCommand:projectHelper.openFloatingNotes",
+    "onCommand:projectHelper.searchLogs",
+    "onCommand:projectHelper.insertLogSnippet",
+    "onCommand:projectHelper.searchTodos",
+    "onCommand:projectHelper.insertTryCatchSnippet",
+    "onCommand:projectHelper.formatDocument",
+    "onCommand:projectHelper.openDocs",
+    "onCommand:projectHelper.showQuickTips",
+    "onCommand:projectHelper.javaDependencyGraph",
+    "onCommand:projectHelper.gitSuggestions",
+    "onCommand:projectHelper.compareFiles",
+    "onCommand:projectHelper.openDashboard"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "projectHelper.gatherComments",
+        "title": "Gather Comments"
+      },
+      {
+        "command": "projectHelper.openNotes",
+        "title": "Open Notes"
+      },
+      {
+        "command": "projectHelper.openFloatingNotes",
+        "title": "Open Floating Notes"
+      },
+      {
+        "command": "projectHelper.searchLogs",
+        "title": "Search Logs"
+      },
+      {
+        "command": "projectHelper.insertLogSnippet",
+        "title": "Insert Log Snippet"
+      },
+      {
+        "command": "projectHelper.searchTodos",
+        "title": "Search TODOs"
+      },
+      {
+        "command": "projectHelper.insertTryCatchSnippet",
+        "title": "Insert Try/Catch Snippet"
+      },
+      {
+        "command": "projectHelper.formatDocument",
+        "title": "Format Document"
+      },
+      {
+        "command": "projectHelper.openDocs",
+        "title": "Open Docs"
+      },
+      {
+        "command": "projectHelper.showQuickTips",
+        "title": "Show Quick Tips"
+      },
+      {
+        "command": "projectHelper.javaDependencyGraph",
+        "title": "Java Dependency Graph"
+      },
+      {
+        "command": "projectHelper.gitSuggestions",
+        "title": "Git Commit Suggestions"
+      },
+      {
+        "command": "projectHelper.compareFiles",
+        "title": "Compare Files"
+      },
+      {
+        "command": "projectHelper.openDashboard",
+        "title": "Open Dashboard"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "echo 'Post-installation script executed!'"
+  },
+  "keywords": [
+    "comments",
+    "notes",
+    "dashboard",
+    "logs",
+    "git",
+    "java",
+    "snippets",
+    "todo",
+    "formatter"
+  ],
+  "license": "MIT", 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhamX1438/codeassicst-vscode-extension-opensource.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/project-helper/issues"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^16.18.123",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^4.8.4"
+  }
+}
