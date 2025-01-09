@@ -1,6 +1,6 @@
 # codeassicst-vscode-extension
 Extension to assist programmers with different functionalities.
-
+![Shubham's Photo](images/Screenshot 2025-01-03 at 10.05.43 PMG)
 # CodeAssist
 
 **CodeAssist** is a free Visual Studio Code extension that enhances your workflow with the following features:
